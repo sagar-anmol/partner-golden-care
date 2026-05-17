@@ -11,24 +11,25 @@ export default function JoinPage() {
           {/* Left Column - Benefits */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl font-bold text-gray-900">
-                Join Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">Partner Network</span>
+              <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+                Join Our Partner Program<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 to-gold-600">Unlock Revenue & Impact</span>
               </h1>
-              <p className="text-xl text-gray-600">
-                Become part of a thriving community of successful partners. Start earning today with GoldenCare.
+              <p className="text-xl text-gray-700">
+                Start earning recurring commissions while helping elderly people receive compassionate care. Build your sustainable business with GoldenCare.
               </p>
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-gray-900">What You&apos;ll Get</h2>
+              <h2 className="text-2xl font-bold text-gray-900">Unlock Revenue & Make Impact</h2>
               <div className="space-y-3">
                 {[
-                  { title: 'Competitive Commission', desc: 'Earn up to 30% commission on every referral' },
-                  { title: 'Marketing Support', desc: 'Access premium marketing materials and campaigns' },
-                  { title: 'Dedicated Manager', desc: 'A personal account manager to help you succeed' },
-                  { title: 'Real-time Dashboard', desc: 'Track earnings and performance in real-time' },
-                  { title: 'Training Programs', desc: 'Comprehensive training and certification programs' },
-                  { title: 'Community Access', desc: 'Join exclusive partner events and networking' },
+                  { title: '20-30% Recurring Commission', desc: 'Earn ongoing commissions from every client' },
+                  { title: 'Marketing & Tools', desc: 'Access everything you need to grow your business' },
+                  { title: 'Dedicated Success Manager', desc: 'Personal support to help you achieve your goals' },
+                  { title: 'Analytics Dashboard', desc: 'Track earnings, growth, and performance metrics' },
+                  { title: 'Expert Training', desc: 'Comprehensive onboarding and ongoing education' },
+                  { title: 'Community & Network', desc: 'Connect with partners and learn from the best' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle className="flex-shrink-0 text-gold-600 mt-1" size={20} />
@@ -60,9 +61,9 @@ export default function JoinPage() {
 
           {/* Right Column - Sign Up Form */}
           <div id="signup" className="bg-white rounded-2xl border border-gold-200 p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Apply Now</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Partner Application</h2>
             <p className="text-gray-600 mb-6">
-              Fill out the form below and our team will review your application within 24-48 hours.
+              Join our network and start earning. Our team will reach out within 24 hours to discuss your opportunity.
             </p>
 
             <form className="space-y-5">
