@@ -32,7 +32,7 @@ export default function LoginPage() {
   return (
     <div className="bg-gradient-to-br from-gold-50 to-white min-h-[calc(100vh-4rem)] flex items-center justify-center py-20">
       <div className="w-full max-w-md px-4">
-        <div className="bg-white rounded-2xl border border-gold-200 p-8 shadow-lg">
+        <div className="bg-white rounded-2xl p-8 shadow-lg" style={{ border: '1px solid #e8e4dc' }}>
           {/* Header */}
           <div className="text-center mb-8">
             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mx-auto mb-4">
@@ -55,7 +55,10 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 required
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               />
             </div>
 
@@ -76,7 +79,10 @@ export default function LoginPage() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   required
-                  className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition"
+                  className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition"
+                  style={{ borderColor: '#e8e4dc' }}
+                  onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                  onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
                 />
                 <button
                   type="button"
@@ -111,7 +117,13 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full px-6 py-3 bg-gradient-to-r from-gold-400 to-gold-500 text-white rounded-lg hover:from-gold-500 hover:to-gold-600 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full px-6 py-3 text-white rounded-lg transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              style={{
+                background: loading ? '#d4a024' : 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)',
+                cursor: loading ? 'not-allowed' : 'pointer'
+              }}
+              onMouseEnter={(e) => !loading && (e.currentTarget.style.background = 'linear-gradient(90deg, #d4a024 0%, #c4941d 100%)')}
+              onMouseLeave={(e) => !loading && (e.currentTarget.style.background = 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)')}
             >
               {loading ? (
                 <>

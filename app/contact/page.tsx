@@ -77,36 +77,42 @@ export default function ContactPage() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {/* Contact Info Cards */}
-          <div className="bg-white p-8 rounded-2xl border border-gold-200 shadow-sm hover:shadow-lg transition">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-4">
+          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition" style={{ border: '1px solid #e8e4dc' }}>
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
               <Mail className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-600 mb-4">partners@goldencare.in</p>
             <a
               href="mailto:partners@goldencare.in"
-              className="text-gold-600 hover:text-gold-700 font-medium transition"
+              className="font-medium transition"
+              style={{ color: '#d4a024' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}
             >
               Send Email
             </a>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl border border-gold-200 shadow-sm hover:shadow-lg transition">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-4">
+          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition" style={{ border: '1px solid #e8e4dc' }}>
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
               <Phone className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
             <p className="text-gray-600 mb-4">+91 98765 43210</p>
             <a
               href="tel:+919876543210"
-              className="text-gold-600 hover:text-gold-700 font-medium transition"
+              className="font-medium transition"
+              style={{ color: '#d4a024' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}
             >
               Call Now
             </a>
           </div>
 
-          <div className="bg-white p-8 rounded-2xl border border-gold-200 shadow-sm hover:shadow-lg transition">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mb-4">
+          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition" style={{ border: '1px solid #e8e4dc' }}>
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
               <MapPin className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Address</h3>
@@ -115,7 +121,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Form */}
-        <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gold-200 p-8 shadow-sm">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 shadow-sm" style={{ border: '1px solid #e8e4dc' }}>
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
 
           {submitted && (
@@ -143,7 +149,10 @@ export default function ContactPage() {
                 onChange={handleChange}
                 required
                 placeholder="John Doe"
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:border-transparent transition"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               />
             </div>
 
@@ -159,7 +168,10 @@ export default function ContactPage() {
                 onChange={handleChange}
                 required
                 placeholder="john@example.com"
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               />
             </div>
 
@@ -174,7 +186,10 @@ export default function ContactPage() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="+91 98765 43210"
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               />
             </div>
 
@@ -188,7 +203,10 @@ export default function ContactPage() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition bg-white"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition bg-white"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               >
                 <option value="">Select a subject</option>
                 <option value="partnership">Partnership Inquiry</option>
@@ -210,7 +228,10 @@ export default function ContactPage() {
                 required
                 placeholder="Tell us more about your inquiry..."
                 rows={6}
-                className="w-full px-4 py-3 border border-gold-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent transition resize-none"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:border-transparent transition resize-none"
+                style={{ borderColor: '#e8e4dc' }}
+                onFocus={(e) => { e.target.style.borderColor = '#d4a024'; e.target.style.boxShadow = '0 0 0 2px rgba(212, 160, 36, 0.2)'; }}
+                onBlur={(e) => { e.target.style.borderColor = '#e8e4dc'; e.target.style.boxShadow = 'none'; }}
               />
             </div>
 
@@ -218,7 +239,13 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full px-6 py-3 bg-gradient-to-r from-gold-400 to-gold-500 text-white rounded-lg hover:from-gold-500 hover:to-gold-600 transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full px-6 py-3 text-white rounded-lg transition font-semibold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              style={{
+                background: loading ? '#d4a024' : 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)',
+                cursor: loading ? 'not-allowed' : 'pointer'
+              }}
+              onMouseEnter={(e) => !loading && (e.currentTarget.style.background = 'linear-gradient(90deg, #d4a024 0%, #c4941d 100%)')}
+              onMouseLeave={(e) => !loading && (e.currentTarget.style.background = 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)')}
             >
               {loading ? (
                 <>
