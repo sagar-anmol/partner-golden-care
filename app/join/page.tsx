@@ -5,15 +5,15 @@ import Link from 'next/link'
 
 export default function JoinPage() {
   return (
-    <div className="bg-gradient-to-br from-gold-50 to-white min-h-[calc(100vh-4rem)]">
+    <div className="min-h-[calc(100vh-4rem)]" style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #ffffff 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Benefits */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl font-bold leading-tight" style={{ color: '#1a1410' }}>
                 Join Our Partner Program<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 to-gold-600">Unlock Revenue & Impact</span>
+                <span style={{ color: '#d4a024' }}>Unlock Revenue & Impact</span>
               </h1>
               <p className="text-xl text-gray-700">
                 Start earning recurring commissions while helping elderly people receive compassionate care. Build your sustainable business with GoldenCare.
@@ -32,7 +32,7 @@ export default function JoinPage() {
                   { title: 'Community & Network', desc: 'Connect with partners and learn from the best' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <CheckCircle className="flex-shrink-0 text-gold-600 mt-1" size={20} />
+                    <CheckCircle className="flex-shrink-0 mt-1" size={20} style={{ color: '#d4a024' }} />
                     <div>
                       <h3 className="font-semibold text-gray-900">{item.title}</h3>
                       <p className="text-sm text-gray-600">{item.desc}</p>
@@ -179,15 +179,16 @@ export default function JoinPage() {
                   type="checkbox"
                   id="terms"
                   required
-                  className="mt-1 w-4 h-4 rounded border-gold-300 text-gold-600 focus:ring-gold-500"
+                  className="mt-1 w-4 h-4 rounded"
+                  style={{ borderColor: '#f5c547', accentColor: '#d4a024' }}
                 />
                 <label htmlFor="terms" className="text-sm text-gray-600">
                   I agree to the{' '}
-                  <Link href="/terms-of-service" className="text-gold-600 hover:text-gold-700 font-medium">
+                  <Link href="/terms-of-service" className="font-medium" style={{ color: '#d4a024' }} onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'} onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}>
                     Terms of Service
-                  </Link>{' '}
-                  and{' '}
-                  <Link href="/privacy-policy" className="text-gold-600 hover:text-gold-700 font-medium">
+                  </Link>
+                  {' and '}
+                  <Link href="/privacy-policy" className="font-medium" style={{ color: '#d4a024' }} onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'} onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}>
                     Privacy Policy
                   </Link>
                 </label>
@@ -234,7 +235,7 @@ export default function JoinPage() {
             }
           ].map((stat, idx) => (
             <div key={idx} className="text-center">
-              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600 mb-2">
+              <div className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}>
                 {stat.number}
               </div>
               <h3 className="text-lg font-semibold text-gray-900">{stat.label}</h3>

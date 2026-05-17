@@ -30,12 +30,12 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gold-50 to-white min-h-[calc(100vh-4rem)] flex items-center justify-center py-20">
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-20" style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #ffffff 100%)' }}>
       <div className="w-full max-w-md px-4">
         <div className="bg-white rounded-2xl p-8 shadow-lg" style={{ border: '1px solid #e8e4dc' }}>
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
               <LogIn className="text-white" size={32} />
             </div>
             <h1 className="text-3xl font-bold text-gray-900">Welcome Back</h1>
@@ -68,7 +68,7 @@ export default function LoginPage() {
                 <label className="block text-sm font-medium text-gray-900">
                   Password
                 </label>
-                <Link href="#forgot" className="text-sm text-gold-600 hover:text-gold-700">
+                <Link href="#forgot" className="text-sm font-medium" style={{ color: '#d4a024' }} onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'} onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}>
                   Forgot?
                 </Link>
               </div>
@@ -106,7 +106,8 @@ export default function LoginPage() {
               <input
                 type="checkbox"
                 id="remember"
-                className="w-4 h-4 rounded border-gold-300 text-gold-600 focus:ring-gold-500"
+                className="w-4 h-4 rounded"
+                style={{ borderColor: '#f5c547', accentColor: '#d4a024' }}
               />
               <label htmlFor="remember" className="text-sm text-gray-600">
                 Remember me
@@ -147,7 +148,7 @@ export default function LoginPage() {
           </div>
 
           {/* Demo Info */}
-          <div className="bg-gold-50 p-4 rounded-lg border border-gold-200 mb-6 text-center">
+          <div className="p-4 rounded-lg mb-6 text-center" style={{ backgroundColor: '#fffbf0', border: '1px solid #f5c547', color: '#d4a024' }}>
             <p className="text-sm text-gray-700">
               <strong>Demo Mode:</strong> Use any email and password (min 6 chars)
             </p>
@@ -157,14 +158,14 @@ export default function LoginPage() {
           <div className="text-center">
             <p className="text-gray-600">
               Don&apos;t have an account?{' '}
-              <Link href="/join" className="text-gold-600 hover:text-gold-700 font-semibold">
+              <Link href="/join" className="font-semibold" style={{ color: '#d4a024' }} onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'} onMouseLeave={(e) => e.currentTarget.style.color = '#d4a024'}>
                 Apply Now
               </Link>
             </p>
           </div>
 
           {/* Additional Links */}
-          <div className="mt-8 pt-6 border-t border-gold-200 flex justify-center gap-4 text-xs">
+          <div className="mt-8 pt-6 flex justify-center gap-4 text-xs" style={{ borderTop: '1px solid #e8e4dc' }}>
             <Link href="/privacy-policy" className="text-gray-500 hover:text-gray-700">
               Privacy
             </Link>

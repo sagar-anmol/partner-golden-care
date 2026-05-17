@@ -11,7 +11,7 @@ export default function CookiesPolicy() {
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-8 text-gray-600">
           {/* Introduction */}
-          <div className="bg-gold-50 p-6 rounded-lg border border-gold-200">
+          <div className="p-6 rounded-lg" style={{ backgroundColor: '#fffbf0', border: '1px solid #f5c547' }}>
             <p className="text-gray-900 font-semibold">
               This Cookie Policy explains how GoldenCare uses cookies and similar technologies on our website. We use cookies to enhance your browsing experience, analyze our traffic, and understand your preferences.
             </p>
@@ -183,7 +183,7 @@ export default function CookiesPolicy() {
           </section>
 
           {/* Contact Section */}
-          <section className="bg-gold-50 p-6 rounded-lg border border-gold-200 mt-8">
+          <section className="p-6 rounded-lg mt-8" style={{ backgroundColor: '#fffbf0', border: '1px solid #f5c547' }}>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Contact Us</h2>
             <p>
               If you have questions about our use of cookies or this Cookie Policy, please contact us at:

@@ -1,3 +1,5 @@
+'use client'
+
 import { CheckCircle, Users, Target, Award } from 'lucide-react'
 import Link from 'next/link'
 
@@ -5,13 +7,13 @@ export default function AboutPage() {
   return (
     <div className="bg-white min-h-[calc(100vh-4rem)]">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-gold-50 to-gold-100 py-20">
+      <section className="py-20" style={{ background: 'linear-gradient(90deg, #fffef7 0%, #fff4d6 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600">GoldenCare</span>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#1a1410' }}>
+              About <span style={{ color: '#d4a024' }}>GoldenCare</span>
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl" style={{ color: '#6b6258' }}>
               Building a global network of partners who are transforming the industry with innovation, excellence, and integrity.
             </p>
           </div>
@@ -23,23 +25,23 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
-              <div className="h-1 w-16 bg-gradient-to-r from-gold-400 to-gold-600 rounded"></div>
-              <p className="text-lg text-gray-600">
+              <h2 className="text-3xl font-bold" style={{ color: '#1a1410' }}>Our Mission</h2>
+              <div className="h-1 w-16 rounded" style={{ background: 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)' }}></div>
+              <p className="text-lg" style={{ color: '#6b6258' }}>
                 To empower entrepreneurs and businesses by providing them with world-class partnership opportunities, tools, and support that enable them to build sustainable, profitable businesses while delivering exceptional value to their customers.
               </p>
-              <p className="text-gray-600">
+              <p style={{ color: '#6b6258' }}>
                 We believe in creating win-win partnerships where success is shared, and growth is mutual. Our partners are not just vendors—they are integral members of our ecosystem.
               </p>
             </div>
 
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
-              <div className="h-1 w-16 bg-gradient-to-r from-gold-400 to-gold-600 rounded"></div>
-              <p className="text-lg text-gray-600">
+              <h2 className="text-3xl font-bold" style={{ color: '#1a1410' }}>Our Vision</h2>
+              <div className="h-1 w-16 rounded" style={{ background: 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)' }}></div>
+              <p className="text-lg" style={{ color: '#6b6258' }}>
                 To become the most trusted and preferred partner network globally, known for our unwavering commitment to excellence, innovation, and the success of our partners.
               </p>
-              <p className="text-gray-600">
+              <p style={{ color: '#6b6258' }}>
                 We envision a future where partnerships are built on transparency, mutual respect, and shared values—creating a thriving ecosystem where everyone can achieve their full potential.
               </p>
             </div>
@@ -48,11 +50,11 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-gold-50">
+      <section className="py-20" style={{ backgroundColor: '#fffbf0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
-            <p className="text-xl text-gray-600">The principles that guide everything we do</p>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#1a1410' }}>Our Core Values</h2>
+            <p className="text-xl" style={{ color: '#6b6258' }}>The principles that guide everything we do</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -80,12 +82,12 @@ export default function AboutPage() {
             ].map((value, idx) => {
               const Icon = value.icon
               return (
-                <div key={idx} className="bg-white p-6 rounded-xl border border-gold-200 hover:shadow-lg transition text-center">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center mx-auto mb-4">
+                <div key={idx} className="bg-white p-6 rounded-xl hover:shadow-lg transition text-center" style={{ border: '1px solid #e8e4dc' }}>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
                     <Icon className="text-white" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{value.title}</h3>
-                  <p className="text-gray-600 text-sm">{value.desc}</p>
+                  <h3 className="text-lg font-bold mb-2" style={{ color: '#1a1410' }}>{value.title}</h3>
+                  <p className="text-sm" style={{ color: '#6b6258' }}>{value.desc}</p>
                 </div>
               )
             })}
@@ -96,7 +98,7 @@ export default function AboutPage() {
       {/* History & Growth */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">Our Journey</h2>
+          <h2 className="text-4xl font-bold text-center mb-16" style={{ color: '#1a1410' }}>Our Journey</h2>
 
           <div className="space-y-8">
             {[
@@ -133,14 +135,14 @@ export default function AboutPage() {
             ].map((milestone, idx) => (
               <div key={idx} className="flex gap-8 items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600">
-                    <span className="text-white font-bold">{idx + 1}</span>
+                  <div className="flex items-center justify-center h-12 w-12 rounded-xl text-white font-bold" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
+                    {idx + 1}
                   </div>
                 </div>
                 <div className="pt-1">
-                  <p className="text-sm font-semibold text-gold-600">{milestone.year}</p>
-                  <h3 className="text-xl font-bold text-gray-900 mt-1">{milestone.title}</h3>
-                  <p className="text-gray-600 mt-2">{milestone.desc}</p>
+                  <p className="text-sm font-semibold" style={{ color: '#d4a024' }}>{milestone.year}</p>
+                  <h3 className="text-xl font-bold mt-1" style={{ color: '#1a1410' }}>{milestone.title}</h3>
+                  <p className="mt-2" style={{ color: '#6b6258' }}>{milestone.desc}</p>
                 </div>
               </div>
             ))}
@@ -149,7 +151,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 bg-gradient-to-r from-gold-600 to-gold-700">
+      <section className="py-20" style={{ background: 'linear-gradient(90deg, #d4a024 0%, #c4941d 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-white text-center">
             {[
@@ -160,7 +162,7 @@ export default function AboutPage() {
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl font-bold mb-2">{stat.number}</div>
-                <p className="text-gold-100">{stat.label}</p>
+                <p style={{ color: '#fffef7' }}>{stat.label}</p>
               </div>
             ))}
           </div>
@@ -170,20 +172,26 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Be Part of Our Story?</h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <h2 className="text-4xl font-bold mb-6" style={{ color: '#1a1410' }}>Ready to Be Part of Our Story?</h2>
+          <p className="text-xl mb-8" style={{ color: '#6b6258' }}>
             Join thousands of successful partners who are building their future with GoldenCare
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/join"
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-gold-400 to-gold-500 text-white rounded-xl hover:from-gold-500 hover:to-gold-600 transition font-semibold shadow-lg"
+              className="inline-flex items-center justify-center px-8 py-4 text-white rounded-xl transition font-semibold shadow-lg"
+              style={{ background: 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)' }}
+              onMouseEnter={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #d4a024 0%, #c4941d 100%)'}
+              onMouseLeave={(e) => e.currentTarget.style.background = 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)'}
             >
               Join Now
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gold-600 border-2 border-gold-300 rounded-xl hover:bg-gold-50 transition font-semibold"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-xl transition font-semibold"
+              style={{ backgroundColor: '#ffffff', border: '2px solid #f5c547', color: '#d4a024' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#fffef7'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ffffff'}
             >
               Learn More
             </Link>

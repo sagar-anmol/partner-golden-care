@@ -11,7 +11,7 @@ export default function TermsOfService() {
         {/* Content */}
         <div className="prose prose-lg max-w-none space-y-8 text-gray-600">
           {/* Introduction */}
-          <div className="bg-gold-50 p-6 rounded-lg border border-gold-200">
+          <div className="p-6 rounded-lg" style={{ backgroundColor: '#fffbf0', border: '1px solid #f5c547' }}>
             <p className="text-gray-900 font-semibold">
               These Terms of Service ("Terms") govern your use of the GoldenCare website and services. By accessing or using our website, you agree to be bound by these Terms. If you do not agree to any part of these Terms, you may not use our services.
             </p>
@@ -136,7 +136,7 @@ export default function TermsOfService() {
           </section>
 
           {/* Contact Section */}
-          <section className="bg-gold-50 p-6 rounded-lg border border-gold-200 mt-8">
+          <section className="p-6 rounded-lg mt-8" style={{ backgroundColor: '#fffbf0', border: '1px solid #f5c547' }}>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Contact Information</h2>
             <p>
               If you have questions about these Terms of Service, please contact us at:

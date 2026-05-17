@@ -65,7 +65,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gold-50 to-white min-h-[calc(100vh-4rem)] py-20">
+    <div className="min-h-[calc(100vh-4rem)] py-20" style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #ffffff 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
