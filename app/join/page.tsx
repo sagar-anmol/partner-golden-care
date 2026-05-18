@@ -16,7 +16,7 @@ export default function JoinPage() {
                 <span style={{ color: '#d4a024' }}>Unlock Revenue & Impact</span>
               </h1>
               <p className="text-xl text-gray-700">
-                Start earning recurring commissions while helping elderly people receive compassionate care. Build your sustainable business with GoldenCare.
+                Start earning recurring commissions while helping elderly people receive compassionate care. Build your sustainable Profile with GoldenCare.
               </p>
             </div>
 
@@ -24,11 +24,11 @@ export default function JoinPage() {
               <h2 className="text-2xl font-bold text-gray-900">Unlock Revenue & Make Impact</h2>
               <div className="space-y-3">
                 {[
-                  { title: '20-30% Recurring Commission', desc: 'Earn ongoing commissions from every client' },
+                  { title: 'Commission', desc: 'Earn ongoing commissions from every client' },
                   { title: 'Marketing & Tools', desc: 'Access everything you need to grow your business' },
                   { title: 'Dedicated Success Manager', desc: 'Personal support to help you achieve your goals' },
                   { title: 'Analytics Dashboard', desc: 'Track earnings, growth, and performance metrics' },
-                  { title: 'Expert Training', desc: 'Comprehensive onboarding and ongoing education' },
+                  { title: 'Training', desc: 'Comprehensive onboarding and ongoing education' },
                   { title: 'Community & Network', desc: 'Connect with partners and learn from the best' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
@@ -219,12 +219,12 @@ export default function JoinPage() {
         <div className="mt-20 grid md:grid-cols-3 gap-8">
           {[
             {
-              number: '1000+',
+              number: 'NA',
               label: 'Active Partners',
               desc: 'Join a thriving global community'
             },
             {
-              number: '₹50M+',
+              number: 'NA',
               label: 'Paid Out',
               desc: 'Real earnings from real partners'
             },

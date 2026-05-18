@@ -17,7 +17,7 @@ export default function Home() {
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium w-fit mx-auto">
               <span>🌍</span>
-              <span>Growing in 50+ Cities</span>
+              <span>Growing in metro cities</span>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export default function Home() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <CheckCircle style={{ color: '#f5c547' }} size={20} />
-                  <span style={{ color: '#4a4138' }}>Earn 20-30% recurring commissions</span>
+                  <span style={{ color: '#4a4138' }}>Earn better commissions</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle style={{ color: '#f5c547' }} size={20} />
@@ -102,7 +102,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-3" style={{ color: '#1a1410' }}>Revenue Growth</h3>
               <p style={{ color: '#4a4138' }}>
-                Earn 20-30% recurring commissions and scale your income with our expanding network.
+                Earn good commissions and scale your income with our expanding network.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
               { step: '1', title: 'Apply', desc: 'Submit your application and tell us about your vision' },
               { step: '2', title: 'Onboard', desc: 'Receive training and get all the tools you need' },
               { step: '3', title: 'Launch', desc: 'Start connecting with clients and building your network' },
-              { step: '4', title: 'Grow', desc: 'Scale your business and earn recurring commissions' },
+              { step: '4', title: 'Grow', desc: 'Scale your profile and earn recurring commissions' },
             ].map((item, idx) => (
               <div key={idx} className="p-8 rounded-xl" style={{ backgroundColor: '#ffffff', border: '2px solid #f5c547' }}>
                 <div className="w-12 h-12 rounded-full text-white flex items-center justify-center text-xl font-bold mx-auto mb-4" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
@@ -166,11 +166,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              'Competitive 20-30% recurring commissions',
+              'Competitive  commissions',
               'Marketing & promotional materials',
               'Real-time analytics and reporting dashboard',
               'Dedicated partner success manager',
-              'Free training and certification programs',
+              'Free training programs',
               'Access to exclusive partner events',
               'Advanced CRM tools for client management',
               'Co-marketing opportunities',
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4" style={{ color: '#ffffff' }}>Ready to Unlock New Revenue?</h2>
           <p className="text-xl mb-8" style={{ color: '#fffef7' }}>
-            Join thousands of successful partners building meaningful businesses with GoldenCare.
+            Join thousands of successful partners building meaningful profile with GoldenCare.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -28,7 +28,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold" style={{ color: '#1a1410' }}>Our Mission</h2>
               <div className="h-1 w-16 rounded" style={{ background: 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)' }}></div>
               <p className="text-lg" style={{ color: '#6b6258' }}>
-                To empower entrepreneurs and businesses by providing them with world-class partnership opportunities, tools, and support that enable them to build sustainable, profitable businesses while delivering exceptional value to their customers.
+                To empower individual by providing them with world-class partnership opportunities, tools, and support that enable them to build sustainable, profitable reach while delivering exceptional value to customers.
               </p>
               <p style={{ color: '#6b6258' }}>
                 We believe in creating win-win partnerships where success is shared, and growth is mutual. Our partners are not just vendors—they are integral members of our ecosystem.
@@ -103,12 +103,12 @@ export default function AboutPage() {
           <div className="space-y-8">
             {[
               {
-                year: '2015',
+                year: '2026',
                 title: 'Founded',
                 desc: 'GoldenCare was established with a vision to revolutionize the partnership model'
               },
-              {
-                year: '2017',
+              /*{
+                year: '2026',
                 title: '100 Partners Milestone',
                 desc: 'Reached 100 active partners across multiple regions'
               },
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 year: '2024',
                 title: 'Platform 2.0',
                 desc: 'Launched our revolutionary new partner platform with advanced features'
-              }
+              }*/
             ].map((milestone, idx) => (
               <div key={idx} className="flex gap-8 items-start">
                 <div className="flex-shrink-0">
@@ -155,9 +155,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-white text-center">
             {[
-              { number: '1000+', label: 'Active Partners' },
-              { number: '50+', label: 'Countries' },
-              { number: '₹50M+', label: 'Paid Out' },
+              { number: 'NA', label: 'Active Partners' },
+              { number: 'NA', label: 'Countries' },
+              { number: 'NA', label: 'Paid Out' },
               { number: '24/7', label: 'Support' }
             ].map((stat, idx) => (
               <div key={idx}>

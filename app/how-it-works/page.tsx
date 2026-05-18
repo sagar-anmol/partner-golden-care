@@ -120,7 +120,7 @@ export default function HowItWorks() {
                   <div className="flex-1">
                     <h2 className="text-3xl font-bold mb-4" style={{ color: '#1a1410' }}>Scale & Earn</h2>
                     <p className="text-lg mb-4" style={{ color: '#4a4138' }}>
-                      Grow your customer base and earn 20-30% recurring commissions on every client. Build a sustainable, scalable business with our support every step of the way.
+                      Grow your customer base and earn commissions on every client. Build a sustainable, scalable business with our support every step of the way.
                     </p>
                     <div className="p-4" style={{ backgroundColor: '#fffef7', borderLeft: '4px solid #d4a024' }}>
                       <p style={{ color: '#4a4138' }}>
@@ -147,26 +147,26 @@ export default function HowItWorks() {
             <div className="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition" style={{ border: '2px solid #e8e4dc' }}>
               <Award style={{ color: '#d4a024' }} className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a1410' }}>Base Commission</h3>
-              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}>20%</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}></p>
               <p style={{ color: '#6b6258' }}>On every customer transaction</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition" style={{ border: '2px solid #e8e4dc' }}>
               <TrendingUp style={{ color: '#d4a024' }} className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a1410' }}>Performance Bonus</h3>
-              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}>+10%</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}></p>
               <p style={{ color: '#6b6258' }}>When you exceed monthly targets</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl text-center hover:shadow-xl transition" style={{ border: '2px solid #e8e4dc' }}>
               <HeartHandshake style={{ color: '#d4a024' }} className="mx-auto mb-4" size={40} />
               <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a1410' }}>Referral Bonus</h3>
-              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}>₹5K+</p>
+              <p className="text-4xl font-bold mb-2" style={{ color: '#d4a024' }}></p>
               <p style={{ color: '#6b6258' }}>For each partner you refer</p>
             </div>
           </div>
 
-          <div className="mt-12 rounded-2xl p-8 text-white" style={{ background: 'linear-gradient(90deg, #d4a024 0%, #8b6f1f 100%)' }}>
+          {/*<div className="mt-12 rounded-2xl p-8 text-white" style={{ background: 'linear-gradient(90deg, #d4a024 0%, #8b6f1f 100%)' }}>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Example Monthly Earnings</h3>
@@ -203,7 +203,7 @@ export default function HowItWorks() {
                 </div>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
 
@@ -221,7 +221,7 @@ export default function HowItWorks() {
               <ul className="space-y-3" style={{ color: '#4a4138' }}>
                 <li className="flex items-start gap-3">
                   <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Build your own business</span>
+                  <span>Build your own profile</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>

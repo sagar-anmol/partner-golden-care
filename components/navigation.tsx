@@ -3,6 +3,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image';
+
 
 const navLinkClass = `font-medium transition-colors duration-200 hover:text-[#d4a024]`
 
@@ -22,12 +24,18 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
-              <span className="text-white font-bold text-sm">GC</span>
-            </div>
-            <span className="text-2xl font-bold" style={{ color: '#1a1410' }}>GoldenCare</span>
-          </Link>
+<Link href="/" className="flex items-center gap-3">
+  <div className="relative w-10 h-10 flex items-center justify-center">
+    <Image 
+      src="/Generated_image.png" // Pointing to your image in the public folder
+      alt="GoldenCare Logo"
+      fill 
+      className="object-contain"
+      priority 
+    />
+  </div>
+  <span className="text-2xl font-bold" style={{ color: '#1a1410' }}>GoldenCare</span>
+</Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">

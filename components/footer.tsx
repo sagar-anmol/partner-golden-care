@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -17,15 +18,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #f5c547 0%, #d4a024 100%)' }}>
-                <span className="text-white font-bold text-sm">GC</span>
-              </div>
-              <span className="text-lg font-bold" style={{ color: '#ffffff' }}>GoldenCare</span>
-            </div>
-            <p className="text-sm" style={{ color: '#8b7d72' }}>Building partnerships that matter.</p>
-          </div>
-
+  <div className="flex items-center gap-2">
+    {/* Logo Container */}
+    <div className="relative w-8 h-8 flex items-center justify-center">
+      <Image 
+        src="/Generated_image.png" // Ensure this is in your public/ folder
+        alt="GoldenCare Logo"
+        fill 
+        className="object-contain"
+      />
+    </div>
+    <span className="text-lg font-bold" style={{ color: '#ffffff' }}>GoldenCare</span>
+  </div>
+  <p className="text-sm" style={{ color: '#8b7d72' }}>Building partnerships that matter.</p>
+</div>
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-4" style={{ color: '#ffffff' }}>Quick Links</h3>
@@ -52,15 +58,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Mail size={16} style={{ color: '#f5c547' }} className="mt-0.5 flex-shrink-0" />
-                <a href="mailto:partners@goldencare.in" className="footer-link">partners@goldencare.in</a>
+                <a href="mailto:partners@goldencare.in" className="footer-link">partner@goldencares.in</a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone size={16} style={{ color: '#f5c547' }} className="mt-0.5 flex-shrink-0" />
-                <a href="tel:+919876543210" className="footer-link">+91 98765 43210</a>
+                <a href="tel:+919876543210" className="footer-link">+91  9955638062</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} style={{ color: '#f5c547' }} className="mt-0.5 flex-shrink-0" />
-                <span style={{ color: '#a89988' }}>New Delhi, India</span>
+                <span style={{ color: '#a89988' }}>Chandigarh, India</span>
               </li>
             </ul>
           </div>

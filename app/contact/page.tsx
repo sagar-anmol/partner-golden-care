@@ -82,9 +82,9 @@ export default function ContactPage() {
               <Mail className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-600 mb-4">partners@goldencare.in</p>
+            <p className="text-gray-600 mb-4">partner@goldencares.in</p>
             <a
-              href="mailto:partners@goldencare.in"
+              href="mailto:partner@goldencares.in"
               className="font-medium transition"
               style={{ color: '#d4a024' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'}
@@ -99,9 +99,9 @@ export default function ContactPage() {
               <Phone className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
-            <p className="text-gray-600 mb-4">+91 98765 43210</p>
+            <p className="text-gray-600 mb-4">+91  9955638062</p>
             <a
-              href="tel:+919876543210"
+              href="tel:+919955638062"
               className="font-medium transition"
               style={{ color: '#d4a024' }}
               onMouseEnter={(e) => e.currentTarget.style.color = '#c4941d'}
@@ -116,7 +116,7 @@ export default function ContactPage() {
               <MapPin className="text-white" size={24} />
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Address</h3>
-            <p className="text-gray-600">New Delhi, India</p>
+            <p className="text-gray-600">Chandigarh, India</p>
           </div>
         </div>
 
