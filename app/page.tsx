@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, CheckCircle, Users, TrendingUp, Heart, Zap } from 'lucide-react'
 
 export default function Home() {
@@ -56,8 +57,6 @@ export default function Home() {
                   href="/join"
                   className="inline-flex items-center justify-center px-8 py-4 text-white rounded-xl transition font-semibold shadow-lg"
                   style={{ background: 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)' }}
-                  onMouseEnter={(e) => e.target.style.background = 'linear-gradient(90deg, #d4a024 0%, #c4941d 100%)'}
-                  onMouseLeave={(e) => e.target.style.background = 'linear-gradient(90deg, #f5c547 0%, #d4a024 100%)'}
                 >
                   <ArrowRight className="mr-2" size={20} />
                   Join Us Today
@@ -66,8 +65,6 @@ export default function Home() {
                   href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl transition font-semibold"
                   style={{ backgroundColor: '#ffffff', color: '#d4a024', border: '2px solid #f5c547' }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#fffef7'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#ffffff'}
                 >
                   Learn More
                 </Link>
@@ -76,11 +73,14 @@ export default function Home() {
 
             {/* Right Image Area */}
             <div className="hidden md:flex items-center justify-center">
-              <div className="relative w-full h-96">
-                <div className="absolute inset-0 rounded-3xl opacity-40" style={{ background: 'linear-gradient(135deg, #ffe8a8 0%, #fff4d6 100%)' }}></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Heart style={{ color: '#ffe8a8' }} size={120} strokeWidth={1} />
-                </div>
+              <div className="relative w-full h-96 rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/family-with-caregivers.jpg"
+                  alt="GoldenCare family with caregivers"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -129,8 +129,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Visual Showcase Section */}
       <section className="py-20" style={{ background: 'linear-gradient(135deg, #fffef7 0%, #fff4d6 100%)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#1a1410' }}>Our Caregivers in Action</h2>
+            <p className="text-lg" style={{ color: '#6b6258' }}>Real partners making a real difference every day</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/caregiver-walk-park.jpg" alt="Caregiver walking with elderly couple in park" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/caregiver-temple.jpg" alt="Caregiver assisting elder at temple" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/caregiver-hospital.jpg" alt="Caregiver helping elder in hospital" fill style={{ objectFit: 'cover' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#1a1410' }}>How It Works</h2>
@@ -156,6 +178,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Grandkids on Demand Banner */}
+      <section className="py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative h-72 rounded-3xl overflow-hidden shadow-xl">
+            <Image src="/grandkids-on-demand.jpg" alt="Grandkids on Demand - GoldenCare" fill style={{ objectFit: 'cover' }} />
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-20" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,11 +206,28 @@ export default function Home() {
               'Advanced CRM tools for client management',
               'Co-marketing opportunities',
             ].map((benefit, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-4 rounded-lg transition" style={{ backgroundColor: '#fffef7' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#fff4d6'} onMouseLeave={(e) => e.target.style.backgroundColor = '#fffef7'}>
+              <div key={idx} className="flex items-start gap-4 p-4 rounded-lg" style={{ backgroundColor: '#fffef7' }}>
                 <Zap style={{ color: '#d4a024' }} size={20} className="flex-shrink-0 mt-1" />
                 <span className="font-medium" style={{ color: '#3d3530' }}>{benefit}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Photo Section */}
+      <section className="py-10" style={{ background: 'linear-gradient(135deg, #fffef7 0%, #fff4d6 100%)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: '#1a1410' }}>Join a Growing Team of Dedicated Partners</h2>
+              <p className="text-lg" style={{ color: '#4a4138' }}>
+                Our caregivers are trained professionals who bring compassion, skill, and dedication to every client interaction.
+              </p>
+            </div>
+            <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
+              <Image src="/caregivers-team.jpg" alt="GoldenCare caregivers team" fill style={{ objectFit: 'cover' }} />
+            </div>
           </div>
         </div>
       </section>
@@ -196,8 +244,6 @@ export default function Home() {
               href="/join"
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl transition font-semibold shadow-lg"
               style={{ backgroundColor: '#ffffff', color: '#d4a024' }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#fffef7'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#ffffff'}
             >
               <ArrowRight className="mr-2" size={20} />
               Start Your Application
@@ -206,8 +252,6 @@ export default function Home() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 rounded-xl transition font-semibold"
               style={{ backgroundColor: '#c4941d', color: '#ffffff', border: '2px solid #ffffff' }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#b45309'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#c4941d'}
             >
               Get In Touch
             </Link>

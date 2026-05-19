@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, Users, Target, Zap, TrendingUp, Award, HeartHandshake } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight, Award, TrendingUp, HeartHandshake } from 'lucide-react'
 
 export default function HowItWorks() {
   return (
@@ -27,8 +28,13 @@ export default function HowItWorks() {
             {/* Step 1 */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="rounded-3xl h-80 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #fff4d6 0%, #fffef7 100%)' }}>
-                  <Users style={{ color: '#ffe8a8' }} size={150} strokeWidth={0.5} />
+                <div className="relative rounded-3xl h-80 overflow-hidden shadow-xl">
+                  <Image
+                    src="/caregivers-team.jpg"
+                    alt="Apply and get approved - GoldenCare team"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
                 </div>
               </div>
               <div className="order-1 md:order-2 space-y-4">
@@ -54,8 +60,13 @@ export default function HowItWorks() {
             {/* Step 2 */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="rounded-3xl h-80 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #fff4d6 0%, #fffef7 100%)' }}>
-                  <Zap style={{ color: '#ffe8a8' }} size={150} strokeWidth={0.5} />
+                <div className="relative rounded-3xl h-80 overflow-hidden shadow-xl">
+                  <Image
+                    src="/caregiver-elderly-tablet.jpg"
+                    alt="Onboarding and training with technology"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
                 </div>
               </div>
               <div className="space-y-4">
@@ -81,8 +92,13 @@ export default function HowItWorks() {
             {/* Step 3 */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="rounded-3xl h-80 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #fff4d6 0%, #fffef7 100%)' }}>
-                  <Target style={{ color: '#ffe8a8' }} size={150} strokeWidth={0.5} />
+                <div className="relative rounded-3xl h-80 overflow-hidden shadow-xl">
+                  <Image
+                    src="/caregiver-walk-park.jpg"
+                    alt="Launch and connect with clients"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
                 </div>
               </div>
               <div className="order-1 md:order-2 space-y-4">
@@ -108,8 +124,13 @@ export default function HowItWorks() {
             {/* Step 4 */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="rounded-3xl h-80 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #fff4d6 0%, #fffef7 100%)' }}>
-                  <TrendingUp style={{ color: '#ffe8a8' }} size={150} strokeWidth={0.5} />
+                <div className="relative rounded-3xl h-80 overflow-hidden shadow-xl">
+                  <Image
+                    src="/caregiver-hospital.jpg"
+                    alt="Scale and earn with GoldenCare"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
                 </div>
               </div>
               <div className="space-y-4">
@@ -165,45 +186,6 @@ export default function HowItWorks() {
               <p style={{ color: '#6b6258' }}>For each partner you refer</p>
             </div>
           </div>
-
-          {/*<div className="mt-12 rounded-2xl p-8 text-white" style={{ background: 'linear-gradient(90deg, #d4a024 0%, #8b6f1f 100%)' }}>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Example Monthly Earnings</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span>10 active clients at ₹5,000/month</span>
-                    <strong>₹10,000 base</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>20% commission</span>
-                    <strong>₹2,000</strong>
-                  </div>
-                  <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.3)' }} className="pt-3 mt-3 flex justify-between text-lg">
-                    <span>Monthly earning potential</span>
-                    <strong>₹2,000+</strong>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-4">As You Scale</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span>50 active clients at ₹5,000/month</span>
-                    <strong>₹50,000 base</strong>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>20% commission + 10% bonus</span>
-                    <strong>₹15,000</strong>
-                  </div>
-                  <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.3)' }} className="pt-3 mt-3 flex justify-between text-lg">
-                    <span>Monthly earning potential</span>
-                    <strong>₹15,000+</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </section>
 
@@ -219,67 +201,57 @@ export default function HowItWorks() {
             <div className="p-8 rounded-2xl" style={{ backgroundColor: '#fffef7', border: '1px solid #e8e4dc' }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: '#1a1410' }}>For You</h3>
               <ul className="space-y-3" style={{ color: '#4a4138' }}>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Build your own profile</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Recurring income stream</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Full support & training</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Flexible schedule</span>
-                </li>
+                {['Build your own profile', 'Recurring income stream', 'Full support & training', 'Flexible schedule'].map(item => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="p-8 rounded-2xl" style={{ backgroundColor: '#fffef7', border: '1px solid #e8e4dc' }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: '#1a1410' }}>For Seniors</h3>
               <ul className="space-y-3" style={{ color: '#4a4138' }}>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Access quality care</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Local trusted partners</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Personalized attention</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Verified caregivers</span>
-                </li>
+                {['Access quality care', 'Local trusted partners', 'Personalized attention', 'Verified caregivers'].map(item => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="p-8 rounded-2xl" style={{ backgroundColor: '#fffef7', border: '1px solid #e8e4dc' }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: '#1a1410' }}>For GoldenCare</h3>
               <ul className="space-y-3" style={{ color: '#4a4138' }}>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Grow faster nationwide</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Better local relationships</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Scalable business model</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
-                  <span>Passionate partners</span>
-                </li>
+                {['Grow faster nationwide', 'Better local relationships', 'Scalable business model', 'Passionate partners'].map(item => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span style={{ color: '#d4a024', fontWeight: 'bold' }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image gallery strip */}
+      <section className="py-10" style={{ background: 'linear-gradient(135deg, #fffef7 0%, #fff4d6 100%)' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-md">
+              <Image src="/caregiver-cinema.jpg" alt="Caregiver at cinema with elder" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-md">
+              <Image src="/caregiver-temple.jpg" alt="Caregiver at temple" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-md">
+              <Image src="/family-with-caregivers.jpg" alt="Family with caregivers" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden shadow-md">
+              <Image src="/caregiver-walk-park.jpg" alt="Walk in park" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>
@@ -296,8 +268,6 @@ export default function HowItWorks() {
             href="/join"
             className="inline-flex items-center justify-center px-8 py-4 rounded-xl transition font-semibold shadow-lg"
             style={{ backgroundColor: '#ffffff', color: '#d4a024' }}
-            onMouseEnter={(e) => e.target.style.backgroundColor = '#fffef7'}
-            onMouseLeave={(e) => e.target.style.backgroundColor = '#ffffff'}
           >
             <ArrowRight className="mr-2" size={20} />
             Apply Now
